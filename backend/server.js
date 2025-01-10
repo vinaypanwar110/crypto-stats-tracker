@@ -5,6 +5,7 @@ import handlefunction from "./controllers/stats.js";
 import handleDeviation from "./controllers/deviation.js";
 
 import dbconnect from "./db/dbconnect.js";
+import "./controllers/backgroundJob.js";
 
 dotenv.config();
 

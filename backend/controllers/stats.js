@@ -16,9 +16,9 @@ const handlefunction = async (req, res) => {
 
     const res_data = await response.json();
 
-    const current_price = res_data["market_data"]["current_price"]["usd"];
-    const market_cap = res_data["market_data"]["market_cap"]["usd"];
-    const hour_change = res_data["market_data"]["price_change_24h_in_currency"]["usd"];
+    const current_price = res_data.market_data.current_price.usd;
+    const market_cap = res_data.market_data.market_cap.usd;
+    const hour_change = res_data.market_data.price_change_24h_in_currency.usd;
 
     const newData = new data({
       coin: coin,
