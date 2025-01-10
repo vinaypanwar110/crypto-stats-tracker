@@ -21,6 +21,7 @@ const handlefunction = async (req, res) => {
     const hour_change = res_data["market_data"]["price_change_24h_in_currency"]["usd"];
 
     const newData = new data({
+      coin: coin,
       price: current_price,
       marketCap: market_cap,
       "24hChange": hour_change,
